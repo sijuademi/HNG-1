@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+.container {
+	position: relative;
+	top: 5rem;
+	width: 73rem;
+	margin: auto;
+	background-color: aquamarine;
+	padding: 4rem 3rem;
+	display: none;
+}
+.display-message {
+	position: absolute;
+	top: 35%;
+	left: 35%;
+	margin-top: 1rem;
+	padding: 1rem;
+	background-color: #f4f4f4;
+	border-left: 4px solid #333;
+	z-index: 10;
+}
+.display-message h3 {
+	text-align: center;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	color: #333;
+}
+.display-message p {
+	margin-top: 1rem;
+	font-size: 1.2rem;
+	line-height: 2rem;
+	color: #333;
+}
+.display-message p:first-of-type span {
+	font-weight: bold;
+	color: #199600;
+	line-height: 3rem;
+}
+.color-display {
+	height: 15rem;
+	width: 15rem;
+	background-color: bisque;
+	margin: auto;
+}
+.color-display + h3 {
+	text-align: center;
+	font-size: 1.5rem;
+	color: rgb(24, 10, 216);
+	padding-top: 4rem;
+}
+.color-box-container {
+	display: flex;
+	justify-content: space-around;
+	margin: 4rem 0;
+}
+
+.color-box {
+	height: 7rem;
+	width: 7rem;
+	border: none;
+}
+button:hover {
+	cursor: pointer;
+	border: 0.2rem solid bisque;
+}
+h5 + button {
+	background-color: bisque;
+	color: #fff;
+	border: none;
+	border-radius: 2rem;
+	padding: 1rem 2rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 1rem;
+}
+.score-reset {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 2rem;
+}
+.score-reset h5 {
+	font-size: 2rem;
+	color: #333;
+	text-transform: uppercase;
+	padding-top: 2rem;
+}
+@keyframes message {
+	from {
+		left: 10%;
+	}
+	to {
+		left: 30%;
+	}
+}
+.message {
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	font-size: 5rem;
+}
+.animation {
+	animation: message 1s linear infinite alternate both;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div data-testid="gameInstructions" class="display-message">
+			<h3>game instructions!!!</h3>
+			<p>
+				The game is simple. <br />
+				The box will display a color and you have to guess the color. <br />
+				You can click on the color boxes to make a guess. <br />
+				If you guess the correct color, your scrore increases by 1. <br />
+				If you guess the wrong color, your scrore decreases by 1. <br />
+				You can reset the game if you want to restart. <br />
+				<span> Good luck!</span>
+			</p>
+			<p>The game will start in: <span class="timer"></span></p>
+		</div>
+		<div class="container">
+			<div class="message animation" data-testid="gameStatus"></div>
+			<div data-testid="colorBox" ="" class="color-display"></div>
+			<h3>
+				Guess the color displayed above by choosing from any of the colours
+				displayed below.
+			</h3>
+			<div class="color-box-container">
+				<button
+					aria-label="color"
+					data-testid="colorOption"
+					type="submit"
+					class="color-box color-box-1"
+				></button
+				><button
+					aria-label="color"
+					data-testid="colorOption"
+					type="submit"
+					class="color-box color-box-2"
+				></button
+				><button
+					aria-label="color"
+					data-testid="colorOption"
+					type="submit"
+					class="color-box color-box-3"
+				></button
+				><button
+					aria-label="color"
+					data-testid="colorOption"
+					type="submit"
+					class="color-box color-box-4"
+				></button
+				><button
+					aria-label="color"
+					data-testid="colorOption"
+					type="submit"
+					class="color-box color-box-5"
+				></button
+				><button
+					aria-label="color"
+					data-testid="colorOption"
+					type="submit"
+					class="color-box color-box-6"
+				></button>
+			</div>
+			<div class="score-reset">
+				<h5 data-testid="score">score: <span class="score"></span></h5>
+				<button data-testid="newGameButton" type="reset" class="reset">
+					new game
+				</button>
+			</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>

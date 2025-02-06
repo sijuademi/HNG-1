@@ -8,7 +8,7 @@ setTimeout(() => {
 	init();
 	document.querySelector(".display-message").style.display = "none";
 	document.querySelector(".container").style.display = "block";
-}, 3000);
+}, 10000);
 
 const startGameTimer = function () {
 	const tick = function () {
@@ -20,7 +20,7 @@ const startGameTimer = function () {
 		}
 		time--;
 	};
-	let time = 3;
+	let time = 10;
 	tick();
 	const timer = setInterval(tick, 1000);
 	return timer;

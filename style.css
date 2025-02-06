@@ -11,7 +11,7 @@
 	top: 5rem;
 	width: 73rem;
 	margin: auto;
-	background-color: aquamarine;
+	background-color: #0e0e52;
 	padding: 4rem 3rem;
 	display: none;
 }
@@ -45,13 +45,12 @@
 .color-display {
 	height: 15rem;
 	width: 15rem;
-	background-color: bisque;
 	margin: auto;
 }
 .color-display + h3 {
 	text-align: center;
 	font-size: 1.5rem;
-	color: rgb(24, 10, 216);
+	color: #35eaf3;
 	padding-top: 4rem;
 }
 .color-box-container {
@@ -70,8 +69,8 @@ button:hover {
 	border: 0.2rem solid bisque;
 }
 h5 + button {
-	background-color: bisque;
-	color: #fff;
+	background-color: #35eaf3;
+	color: #0e0e52;
 	border: none;
 	border-radius: 2rem;
 	padding: 1rem 2rem;
@@ -87,7 +86,7 @@ h5 + button {
 }
 .score-reset h5 {
 	font-size: 2rem;
-	color: #333;
+	color: #35eaf3;
 	text-transform: uppercase;
 	padding-top: 2rem;
 }
@@ -107,4 +106,65 @@ h5 + button {
 }
 .animation {
 	animation: message 1s linear infinite alternate both;
+}
+
+@media (max-width: 768px) {
+	.container {
+		width: 90%;
+		padding: 2rem 1.5rem;
+	}
+	.display-message {
+		top: 30%;
+		left: 10%;
+		width: 80%;
+	}
+	.color-display {
+		height: 10rem;
+		width: 10rem;
+	}
+	.color-box {
+		height: 5rem;
+		width: 5rem;
+	}
+	.score-reset h5 {
+		font-size: 1.5rem;
+	}
+	.message {
+		font-size: 3rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.container {
+		width: 100%;
+		padding: 1rem;
+	}
+	.display-message {
+		top: 20%;
+		left: 5%;
+		width: 90%;
+	}
+	.color-display {
+		height: 8rem;
+		width: 8rem;
+	}
+	.color-box {
+		height: 4rem;
+		width: 4rem;
+	}
+	.color-box-container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1rem;
+	}
+	.score-reset {
+		flex-direction: column;
+		align-items: center;
+	}
+	.score-reset h5 {
+		font-size: 1.2rem;
+	}
+	.message {
+		font-size: 2rem;
+	}
 }
